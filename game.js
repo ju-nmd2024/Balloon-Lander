@@ -206,6 +206,7 @@ function loseScreen() {
   textSize(20);
   textAlign(CENTER);
   text("Menu :P", 200, 378);
+  pop();
 
   //MOUSE WHEN CLICKED ON PLAY AGAIN
   if (state === "lose" && mouseIsPressed) {
@@ -317,12 +318,12 @@ function draw() {
     balloonY += velocity;
     velocity += acceleration;
     if (balloonY > 950) {
-      if (velocity > 15) {
+      if (velocity > 10) {
         state = "lose";
         balloonY = 80;
         velocity = 0.1;
         acceleration = 0;
-      } else if (velocity < 13) {
+      } else if (velocity < 10) {
         state = "win";
         balloonY = 80;
         velocity = 0.1;
