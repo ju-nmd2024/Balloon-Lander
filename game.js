@@ -321,12 +321,12 @@ function draw() {
       if (velocity > 10) {
         state = "lose";
         balloonY = 80;
-        velocity = 0.1;
+        velocity = 0.25;
         acceleration = 0;
       } else if (velocity < 10) {
         state = "win";
         balloonY = 80;
-        velocity = 0.1;
+        velocity = 0.25;
         acceleration = 0;
       }
     }
