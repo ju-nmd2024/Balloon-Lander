@@ -4,7 +4,7 @@ function setup() {
 }
 
 let balloonX = 600;
-let balloonY = 1000;
+let balloonY = 100;
 let s = 0.5;
 let state = "start";
 let velocity = -0.1;
@@ -316,8 +316,8 @@ function draw() {
 
     balloonY += velocity;
     velocity += acceleration;
-    if (balloonY > 800) {
-      if (velocity > 13) {
+    if (balloonY > 950) {
+      if (velocity > 15) {
         state = "lose";
         balloonY = 80;
         velocity = 0.1;
